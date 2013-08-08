@@ -1,299 +1,940 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Anime Check-In</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
- -->
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<title>Assignment Details | Startup Engineering</title>
+<link rel="stylesheet" href="https://dt5zaw6a98blc.cloudfront.net/site-static/dae672ad78b1bf412cb5a9709a2ee4a143d9575b/css/spark.main.css" />
+<link rel="stylesheet" href="https://www.coursera.org/maestro/api/course/970374/course.css">
+<link rel="icon" href="https://spark-public.s3.amazonaws.com/startup/static/images/favicon.ico" />
+</head>
 
-    <link rel="stylesheet" href="css/social-buttons.css">
-
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <style type="text/css">
-      /* Large desktop */
-      @media (min-width: 980px) {
-        body {
-         padding-top: 60px;
-        }
-       .linediv-l {
-         border-right: 1px white solid;
-        }
-       .linediv-r {
-         border-left: 1px white solid;
-       }
-      }
-
-      /* Landscape phones and down */
-      @media (max-width: 480px) {
-       .copy {
-         padding: 2.5% 10%;
-       }
-       .linediv-l {
-         border-bottom: 1px white solid;
-       }
-       .linediv-r {
-         border-top: 1px white solid;
-       }
-      }
-
-      /* All form factors */
-
-      /* Main body and headings */
-      body{
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-      }
-      .heading, .subheading {
-        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-        text-align: center;
-      }
-      p.lead {
-        padding-top: 1.5%;
-        font-size: 24px;
-        line-height: 30px;
-      }
-      p {
-        font-size: 18px;
-        line-height: 24px;
-      }
-
-      /* Video pitch and Action */
-      .pitch {
-        padding: 2.5% 0%;
-      }
-      .order {
-        padding: 2% 0%;
-      }
-      .actions {
-        background-color: #343434;
-        padding: 3% 0%;
-      }
-      .video, .thermometer, .order, .social, .statistics {
-        text-align: center;
-      }
-      .statistics h3, .statistics p {
-        color: white;
-      }
-
-      /* Marketing Copy and Footer */
-      .copy {
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
-        text-align: justify;
-      }
-      .asset {
-        padding: 2.5% 0%;
-      }
-      .footer {
-        color: #cccccc;
-        text-align: center;
-      }
-      .footer p {
-        font-size: 11px;
-      }
-      .footer a {
-        color: #ccccff;
-      }
-    </style>
-
-
-  </head>
-
-
-  <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">Thinking</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
+<body>
+    <a href="#course-page-content" class="hidden">Skip Navigation</a>
+    <div class="hidden">
+        This page features MathJax technology to render mathematical formulae.
+        If you are using a screen reader, please visit <a href="http://www.dessci.com/en/products/mathplayer/">MathPlayer</a> to download the plugin for your browser. Please note that this is an Internet Explorer-only plugin at this time.
     </div>
 
-    <div class="container">
-      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
-      <!-- www.google.com/fonts/specimen/Ubuntu -->
-      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
-      <div class="row-fluid heading">
-        <div class="span12">
-          <h1>Anime Check-In</h1>
-        </div>
-      </div>
-      <div class="row-fluid subheading">
-        <div class="span12">
-          <!-- Special typography from Bootstrap for lead paragraph. -->
-          <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">Anime Check-In</p>
-        </div>
-      </div>
-      <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+    <h1 class="hidden">Startup Engineering</h1>
+
+    
+
+<div class="course-topbar container-fluid" role="banner">
+
+    <div class="row-fluid">
+        
+        <div class="span3">
+          <a href="https://www.coursera.org/" class="course-topbar-logo" data-if-linkable="add-referrer"></a>
         </div>
 
-        <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
-        <div class="span5 actions">
-          <div class="span8 offset2">
-            <div class="statistics">
-              <div class="span4">
-                <!-- linediv-l and linediv-r give dividing lines that look
-                different in horizontal and vertical layouts, illustrating
-                media queries. -->
-                <div class="linediv-l">
-                <h3>15</h3> <p>backers</p>
-                </div>
-              </div>
-              <div class="span4">
-                <div class="linediv-c">
-                  <h3>$6,000</h3> <p>of $10,000</p>
-                </div>
-              </div>
-              <div class="span4">
-                <div class="linediv-r">
-                <h3>30</h3> <p>days left</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="span10 offset1">
-            <!-- Bootstrap progress bar -->
-            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-            <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 60%;">60%</div>
-              <div class="bar bar-warning" style="width: 40%;"></div>
-            </div>
-          </div>
-          <div class="span6 offset3 order">
-            <!-- Standard Bootstrap button. -->
-            <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-            <button class="btn btn-success btn-large">Preorder</button>
-          </div>
-          <div class="span8 offset2 social">
-            <!-- Social buttons are not included in default Bootstrap. -->
-            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-            <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-          </div>
-        </div>
-      </div>
+        <div class="course-topbar-nav-container span9" style="float:right;">
+            <h2 class="hidden">Top Navigation Bar</h2>
 
-      <!-- Beyond this part the marketing copy begins. -->
-      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
-      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-      <!-- http://placehold.it -->
-      <div class="row-fluid section1">
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
-        <div class="span5 copy">
-          <p>
-            Going to make an Anime Check-In site of some sort, sort of 
-			Get Glue meets Crunchy-roll. Where users can check-in and
-			socialize over their favorite anime (episodes). Sed volutpat
-			lorem ut congue malesuada. In facilisis scelerisque turpis 
-			sed lacinia. Donec in orci lectus. Donec auctor semper quam,
-			eget rhoncus purus fringilla id. Phasellus id nibh eu risus 
-			ultrices adipiscing. Lorem ipsum dolor sit amet, consectetur
-			adipiscing elit. Donec porta, dui sagittis hendrerit rutrum,
-			nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce
-			nec egestas sem. Donec fringilla.
-          </p>
-        </div>
-      </div>
+            <ul class="course-topbar-nav-list">
+                <li class="course-topbar-nav-list-item">
+                  <a href="https://www.coursera.org/courses" data-if-linkable="add-referrer">Courses</a>
+                </li>
 
-      <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-			Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus 
-			nisl, eu mollis justo velit at nunc. Fusce nec egestas sem.
-			Donec fringilla ante lectus, a pellentesque lacus dignissim 
-			ac. Sed volutpat lorem ut congue malesuada. In facilisis 
-			scelerisque turpis sed lacinia. Donec in orci lectus. Donec
-			auctor semper quam, eget rhoncus purus fringilla id.
-			Phasellus id nibh eu risus ultrices adipiscing. Lorem ipsum
-			dolor sit amet, consectetur adipiscing elit. Donec porta, 
-			dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis
-			justo velit at nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
+                                
+                <li class="course-topbar-nav-list-item"
+                    tabindex="0" role="button" aria-haspopup="true" aria-expanded="false" aria-owns="course-topbar-my"
+                    data-popup="#course-topbar-my" data-popup-bind-open="mouseenter" data-popup-close style="cursor:pointer;" data-popup-direction="se">
+                                        <a data-user-id="1571794">  
+                        Behrang Allahyar 
+                        <i class="icon-caret-down"></i>
+                    </a>
+                </li>
+               
+                            </ul>
         </div>
-        <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
-      </div>
-
-      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
-      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
-      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-      <div class="row-fluid faq">
-          <div class="span10 offset1">
-            <h3>FAQ</h3>
-            <div class="accordion" id="accordion2">
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                    What does FAQ stand for?
-                  </a>
-                </div>
-                <div id="collapseOne" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Frequently Asked Question. TODO
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="https://spark-public.s3.amazonaws.com/startup/code/bitstarter-hw4.html#collapseTwo">
-                    What's a Frequently Asked Question?
-                  </a>
-                </div>
-                <div id="collapseTwo" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    A question which is commonly asked by users. TODO
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-      </div>
-
-      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
-      <!-- http://creativecommons.org/licenses/ -->
-      <div class="row-fluid footer">
-        <div class="span12">
-          <p>This work is licensed under
-            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-              By-SA 3.0
-            </a>, without all the cruft that would otherwise be
-            put at the bottom of the page.</p>
-        </div>
-      </div>
     </div>
 
+    <div id="course-topbar-aboutus" class="course-topbar-sublist">
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/about/jobs" target="_new" data-if-linkable="add-referrer">Jobs</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/about/team" target="_new" data-if-linkable="add-referrer">Team</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/about/contact" target="_new" data-if-linkable="add-referrer">Contact Us</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/about/" target="_new" data-if-linkable="add-referrer">About Us</a>
+    </div>
 
-    <script src="http://code.jquery.com/jquery.js"></script>
-<!-- <script src="js/bootstrap.min.js"></script> -->
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <div id="course-topbar-my" class="course-topbar-sublist">
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/" target="_new">Courses</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/account/profile" target="_new">Profile</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/account/records" target="_new">Course Records</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/account/settings" target="_new">Settings</a>
+        <a class="course-topbar-sublist-item" href="https://class.coursera.org/startup-001/class/preferences">Course Preferences</a>
+        <a class="course-topbar-sublist-item" href="https://class.coursera.org/startup-001/auth/logout">Sign Out</a>
+    </div>
 
-  </body>
+</div>
+
+
+
+
+
+
+
+
+<style type="text/css">
+ 
+
+
+</style>
+<div class="course-topbanner">
+  <div class="course-topbanner-university-logo">
+    <a href="https://www.coursera.org/stanford" class="coursera-university-color" target="_blank" data-if-linkable="add-referrer" title="https://www.coursera.org/stanford">
+      <img src="https://www.coursera.org/maestro/api/course/970374/university_logo" alt="stanford">
+    </a>
+  </div>
+
+  
+  <h1 class="course-topbanner-header">
+    <a class="course-topbanner-name coursera-university-color" href="https://class.coursera.org/startup-001/class/index" data-if-linkable="modal-lock">
+      Startup Engineering    </a>
+    <br>
+    <span class="course-topbanner-instructor" style="">
+      by  Balaji S. Srinivasan,  Vijay S. Pande    </span>
+  </h1>
+
+</div>
+    
+        <div class="container-fluid" style="position:relative;">
+        <div class="row-fluid">
+            <div id="course-page-sidebar" role="navigation">
+                <div class="course-navbar-container">
+	<a href="https://class.coursera.org/startup-001/class/index"
+      >
+	<img src="https://www.coursera.org//maestro/api/course/970374/logo" style="width: 205px;height: 116px;margin: -15px 0px 8px 1px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);" alt="Course Home Page">
+	</a>
+
+
+<h2 class="hidden">Side Navigation Bar</h2>
+<ul class="course-navbar-list">
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/startup-001/class/index"  data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Home							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/startup-001/wiki/view?page=homework"  data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Homework							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/startup-001/wiki/view?page=syllabus"  data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Syllabus							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/startup-001/lecture/index"  data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Video Lectures							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/startup-001/wiki/view?page=week1"  data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Week 1: Logistics and Introduction							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/startup-001/wiki/view?page=week2"  data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Week 2: Linux, Command Line, SSJS, Emacs, Git, Dotfiles							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/startup-001/wiki/view?page=week3"  data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Week 3: Market Research, Wireframing, Design. HTML/CSS/JS.							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/startup-001/wiki/view?page=week4"  data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Week 4: Deployment, DNS, and Custom Domains. Mobile: HTTP, User Agents, Responsive Design.							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/startup-001/wiki/view?page=week5"  data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Week 5: Social/Local/Mobile, Virality, and Growth. Intermediate and Frontend JS.							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/startup-001/wiki/view?page=week6"  data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Week 6: Regulation, Disruption, and the Future. Command Line Interfaces, SQL, DBs, and ORMs.							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/startup-001/wiki/view?page=guest-lectures"  data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Guest Lectures							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/startup-001/forum/index"  data-if-linkable="modal-lock,gray,lock-icon" class="coursera-university-color">
+				
+				Forums							</a>
+						</li>
+	
+	
+		
+	
+    </ul>
+
+<ul style="list-style-type:none;margin-left: 10px;">
+  <li><a href="http://help.coursera.org" class="coursera-university-color" target="_blank" title="Open help articles in new window"><i class="icon-question-sign"></i> Help Articles</a></li>
+</ul>
+
+<ul style="list-style-type:none;margin-left: 10px;">
+	
+</ul>
+
+</div>
+            </div>
+            <div id="course-page-content" role="main">
+                                <h2 class="course-page-header">
+  <span>HW6 Programming: Deployment, Social, Analytics, Payments: Instructions</span>
+
+  <a class="coursera-reporter-link" title="Click here if you're experiencing technical problems or found errors in the course materials." target="_blank" href="https://class.coursera.org/startup-001/class/reporter?url=http%3A%2F%2Fclass.coursera.org%2Fstartup-001%2Fassignment%2Fview%3Fassignment_id%3D12&area=programming&title=HW6+Programming%3A+Deployment%2C+Social%2C+Analytics%2C+Payments">
+     Help
+  </a>
+</h2>
+
+<br>
+<p>When you're ready to submit your solution, go to the <a href="https://class.coursera.org/startup-001/assignment/list">assignments list</a>.
+</p>
+
+<br>
+<p>
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="title" content=""/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013"/>
+<meta name="author" content="Balaji S. Srinivasan"/>
+<meta name="description" content="Stanford's MOOC on Startup Engineering."/>
+<meta name="keywords" content="startup, startup engineering, stanford, cs184, HTML5, CSS, JS, node.js"/>
+
+<link rel="stylesheet" type="text/css" href="../common/twitter-bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../common/twitter-bootstrap/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="../common/org-export.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+<div id="org-div-home-and-up" style="text-align:right;font-size:70%;white-space:nowrap;">
+ <a accesskey="h" href="http://startup.stanford.edu"> UP </a>
+ |
+ <a accesskey="H" href="http://startup.stanford.edu"> HOME </a>
+</div>
+
+<div id="preamble">
+
+</div>
+
+<div id="content" class="container">
+<h1 class="title"></h1>
+
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1">Homework 6: Deploy, Social, Analytics, and Payments</h2>
+<div class="outline-text-2" id="text-1">
+
+<p>In the previous assignments you set up your basic HTML/CSS skeleton. In this
+assignment we're going to start improving the development process by adding
+the dev/staging/production flow. We'll also add some basic frontend JS
+scripts to your site to add social, analytics, and payments
+functionality. The visible modifications to the bitstarter page are as
+shown; your page will morph as follows:
+</p>
+
+
+<div style="text-align:center;">
+<img src="https://d396qusza40orc.cloudfront.net/startup/images/before-after-figure.png">
+</div>
+<br/>
+<br/>
+
+<p>
+That is, you added two visible buttons (Coinbase and AddThis) and
+some invisible code (Google Analytics). All of these are just frontend JS
+scripts that change the behavior of the page. Note that we didn't need any
+new backend code yet, because much of the action is happening on the
+Addthis, Coinbase, and Google servers.
+</p>
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1">Part 1: Set up a dev/staging/production flow</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<p>First, go through the <a href="https://d396qusza40orc.cloudfront.net/startup%2Flecture_slides%2Flecture7-deployment-dns-custom-domains.pdf">lecture 7 notes</a> and convert your github repository to
+use the dev/staging/production flow. As a very first task, update your
+<code>index.html</code> to the new version here (<a href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Findex-fluid.html">link</a>); this fixes a bug with missing
+<code>row-fluid</code> classes and adds <code>alt</code> attributes to all image properties. See
+if you can do this by editing <code>index.html</code> in the <code>develop</code> git branch,
+merging into the <code>staging</code> branch, previewing, and then merging into the
+<code>master</code> branch.
+</p>
+<p>
+<i>Submit</i>: Upload a file with a link to your <code>staging</code> branch on github. This
+confirms that you've set up remote branches on github. For example, a file
+with the line <code>https://github.com/username/bitstarter/tree/staging</code> would
+work.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2">Part 2: Set up Social Sharing with AddThis</h3>
+<div class="outline-text-3" id="text-1-2">
+
+<p>For the next few parts, using an EC2 dev server to preview the installation
+and placement of the social and payment buttons will make your life a bit
+easier. If you do want to run develop locally, you will need to connect to
+<code>localhost</code> rather than trying to just open the file in your browser. The
+reason is that some widgets require the page to be "served" in a sense,
+rather than browsed from a local computer. Serving from localhost will work
+for many of these widgets, but not all, at least with default Chrome. If you
+really want to develop on a local machine, here's a reference explaining the
+concept of the Same Origin Policy, and how to disable it via a Chrome
+command line flag: <a href="http://bit.ly/132hlYr">bit.ly/132hlYr</a>. If you don't want to worry about this
+kind of thing, you can simply use the EC2 machines for dev preview over the
+public internet and not be too concerned at the present time with local dev
+issues. The PDF version of this figure is <a href="https://d396qusza40orc.cloudfront.net/startup/images/hw6-dev-preview.pdf">here</a>.
+</p>
+
+
+<div style="text-align:center;">
+<img width="80%" src="https://d396qusza40orc.cloudfront.net/startup/images/hw6-dev-preview.png">
+</div>
+<br/>
+<br/>
+
+<p>
+In general, a good convention when picking APIs is to just pick the most
+popular one in a given domain as a first cut, and then use others as time
+progresses. With that in mind, when it comes to adding social buttons
+<a href="http://addthis.com">AddThis.com</a> is one of the very few sites on the web with a <a href="http://www.quora.com/How-did-AddThis-get-a-PageRank-of-10">PageRank of 10</a> -
+up there with google.com itself! The reason it ranks so highly is that it
+provides the social buttons you see everywhere, so it has incredible
+backlinks. Given our timeframe, we don't want to learn the entire <a href="https://dev.twitter.com/">Twitter</a>
+and <a href="http://developers.facebook.com/docs/reference/javascript/FB.api/">Facebook APIs</a>, which are significant topics in their own right and also
+changing frequently enough to require constan maintenance. A useful
+alternative is to let AddThis keep on top of that for you. Sign up for
+AddThis here and configure it as shown below:
+</p>
+
+
+<div style="text-align:center;">
+<img width="80%" src="https://d396qusza40orc.cloudfront.net/startup/images/addthis-figure.png">
+</div>
+<br/>
+<br/>
+
+<p>
+Then add it to the <code>index.html</code> file in your git repo. You will probably want
+to reduce the number of buttons, so the actual thing you paste in will look
+something like the snippet below. Note that we are showing the enclosing div
+with the <code>span8 offset2 social</code> class for context.
+</p>
+
+
+
+<pre class="src src-html">&lt;<span style="color: #0000ff; font-weight: bold;">div</span> <span style="color: #0000ff;">class</span>=<span style="color: #00ff00;">"span8 offset2 social"</span>&gt;
+  <span style="color: #ff0000;">&lt;!-- </span><span style="color: #ff0000;">AddThis Button BEGIN </span><span style="color: #ff0000;">--&gt;</span>
+  &lt;<span style="color: #0000ff; font-weight: bold;">div</span> <span style="color: #0000ff;">class</span>=<span style="color: #00ff00;">"addthis_toolbox addthis_default_style addthis_32x32_style"</span>&gt;
+    &lt;<span style="color: #0000ff; font-weight: bold;">a</span> <span style="color: #0000ff;">class</span>=<span style="color: #00ff00;">"addthis_button_preferred_1"</span>&gt;&lt;/<span style="color: #0000ff; font-weight: bold;">a</span>&gt;
+    &lt;<span style="color: #0000ff; font-weight: bold;">a</span> <span style="color: #0000ff;">class</span>=<span style="color: #00ff00;">"addthis_button_preferred_2"</span>&gt;&lt;/<span style="color: #0000ff; font-weight: bold;">a</span>&gt;
+    &lt;<span style="color: #0000ff; font-weight: bold;">a</span> <span style="color: #0000ff;">class</span>=<span style="color: #00ff00;">"addthis_button_compact"</span>&gt;&lt;/<span style="color: #0000ff; font-weight: bold;">a</span>&gt;
+    &lt;<span style="color: #0000ff; font-weight: bold;">a</span> <span style="color: #0000ff;">class</span>=<span style="color: #00ff00;">"addthis_counter addthis_bubble_style"</span>&gt;&lt;/<span style="color: #0000ff; font-weight: bold;">a</span>&gt;
+  &lt;/<span style="color: #0000ff; font-weight: bold;">div</span>&gt;
+   &lt;<span style="color: #0000ff; font-weight: bold;">script</span> <span style="color: #0000ff;">type</span>=<span style="color: #00ff00;">"text/javascript"</span>&gt;var addthis_config = 
+    {<span style="color: #00ff00;">"data_track_addressbar"</span>:true};&lt;/<span style="color: #0000ff; font-weight: bold;">script</span>&gt;
+   &lt;<span style="color: #0000ff; font-weight: bold;">script</span> <span style="color: #0000ff;">type</span>=<span style="color: #00ff00;">"text/javascript"</span> 
+           <span style="color: #0000ff;">src</span>=<span style="color: #00ff00;">"//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51e5f5d9549fdf9b"</span>&gt;&lt;/<span style="color: #0000ff; font-weight: bold;">script</span>&gt;
+  <span style="color: #ff0000;">&lt;!-- </span><span style="color: #ff0000;">AddThis Button END </span><span style="color: #ff0000;">--&gt;</span>
+&lt;/<span style="color: #0000ff; font-weight: bold;">div</span>&gt;
+</pre>
+
+
+<p>
+And to center the sharing buttons on the page, you will want to add a
+snippet like this right before the <code>&lt;/style&gt;</code> closing tag, in the <code>&lt;head&gt;</code>
+of the page. To understand this trick, read this <a href="http://designshack.net/articles/css/how-to-center-anything-with-css/">link</a> (especially this
+<a href="http://designshack.net/wp-content/uploads/centeranything-4.jpg">image</a>). 
+</p>
+
+
+
+<pre class="src src-html">   /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+ div.addthis_toolbox {
+  width:180px;
+  margin: 0 auto;
+ }
+&lt;/<span style="color: #0000ff; font-weight: bold;">style</span>&gt;
+</pre>
+
+
+<p>
+Note that this is a bit of a hack; in general you do not want to specify
+explicit horizontal widths in a responsive design rather than
+percentages. In this case, the fact that these images are so small and of
+fixed size (36, 36, 40, and 62 pixels) even as the page shrinks means we can
+get away with it without having to do something more complex.
+</p>
+<p>
+Test it out by confirming that a visitor can use the social buttons. You
+might need to sign up for a Twitter or Facebook (FB) account to test
+this. Note that AddThis is fairly smart, in that it shows the buttons which
+your user is most likely to click on, likely by detecting whether they are
+logged-in to Twitter or FB.
+</p>
+<p>
+<i>Submit</i>: Upload a file with the <code>pubid=ra-....</code> string from
+your AddThis Snippet. This is just a unique string that identifies your
+AddThis installation which you'll get once you complete this part.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3">Part 3: Set up analytics with Google Analytics</h3>
+<div class="outline-text-3" id="text-1-3">
+
+<p><a href="http://www.google.com/analytics/">Google Analytics</a> is a widely used tool for determining who's viewing your
+website, from what location, and so on. Sign up for an account and then
+configure it as shown below. To confirm verification, you will want to use
+BOTH the new <code>analytics.js</code> and <code>ga.js</code> (see the Google documentation <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/">here</a>)
+in your page. The snippet for <code>analytics.js</code> will appear if you select
+"Universal Tracking" when you sign up, while the snippet for ga.js is at
+<a href="https://developers.google.com/analytics/devguides/collection/gajs/">this link</a>. The PDF version of this figure is <a href="https://d396qusza40orc.cloudfront.net/startup/images/google-analytics-figure.pdf">here</a>.
+</p>
+
+
+<div style="text-align:center;">
+<img src="https://d396qusza40orc.cloudfront.net/startup/images/google-analytics-figure.png">
+</div>
+<br/>
+<br/>
+
+<p>
+The most important part of your Google Analytics setup is the UA string, 
+which is <code>UA-42843113-1</code> in this example. This isn't a secure API key; it's
+visible to everyone on the web that visits your page and hits 'View
+Source'. But it's how Google identifies your site on their servers.
+</p>
+<p>
+Once you deploy your site to the production URL (in this example,
+<code>bitstart.net</code>) with a <code>ga.js</code> snippet, the Google Analytics Admin page will
+say 'Tracking Installed' after you visit the page a few times. The tricky
+part is that if you only use <code>analytics.js</code> and don't also use <code>ga.js</code>, the
+Analytics Admin page won't say 'Tracking Installed'. This is a bug on
+Google's end in terms of their documentation. You can debug your setup with
+this Google link: <a href="https://support.google.com/analytics/answer/1008083">Verify your web tracking setup</a>, though things should
+work if you followed the above instructions.
+</p>
+<p>
+Another note: even if "Tracking Installed" shows up, it can take up to 24
+hours for the first data to appear in your dashboard at
+<a href="https://www.google.com/analytics/web/?hl=en#home">https://www.google.com/analytics/web/?hl=en#home</a>. It is not set up to
+provide realtime responsiveness. Note that if you want to explore more,
+newer startups like <a href="https://mixpanel.com/">Mixpanel</a>, <a href="http://get.gaug.es/">Gauges</a>, and <a href="https://chartbeat.com/">Chartbeat</a> are complementary to
+Google Analytics. Mixpanel focuses heavily on action monitoring (<a href="http://techcrunch.com/2013/07/29/mixpanel-now-coming-to-a-billboard-near-you/">more</a>),
+Gauges is about multi-site monitoring (<a href="http://get.gaug.es/">screenshots</a>), and Chartbeat centers
+on the realtime experience (<a href="https://chartbeat.com/demo/">example</a>); these are areas that Google Analytics
+isn't optimized for.
+</p>
+<p>
+<i>Submit</i>: Upload a file with your <code>UA-XXXXX-X</code> Google Analytics tracking
+code. This is just a unique string that identifies your Analytics
+installation which you'll get once you complete this part.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-4" class="outline-3">
+<h3 id="sec-1-4">Part 4: Set up payments with Coinbase</h3>
+<div class="outline-text-3" id="text-1-4">
+
+<p>In terms of practicalities, all you need to know for the purposes of the
+course is that Bitcoin (BTC) is a decentralized currency which will allow
+you to send and receive payments in any country without bureaucracy. You can
+see the current BTC exchange rates at <a href="http://bitcoinity.org/markets">http://bitcoinity.org/markets</a>; at the
+time of writing 1 BTC is about $100 USD, and has been for a while. To obtain
+a few BTC for the purposes of testing, you will want to check out
+<a href="http://howtobuybitcoins.info/">howtobuybitcoins.info</a>. You can also check out <a href="http://www.buybitcoinswiki.com/how-to-buy-bitcoins/">17 different ways</a> to buy
+Bitcoin (BTC), and there is more information at the <a href="https://en.bitcoin.it/wiki/Buying_Bitcoins_(the_newbie_version)">Buying Bitcoins (newbie version)</a> article on the Bitcoin Wiki. And if you're in the US, Coinbase now
+offers <a href="http://blog.coinbase.com/post/55203204550/instant-bitcoin-purchases-at-coinbase">instant bitcoin purchases</a>.
+</p>
+<p>
+Depending on how much time you have, please take a look at the following
+four resources to learn more about Bitcoin:
+</p>
+<ol>
+<li>Two minutes: Video introduction. (<a href="https://www.weusecoins.com/en/">We Use Coins</a>)
+</li>
+<li>Ten minutes: Unfazed by Bitcoin's Wild Swings And Mysterious Origins, Silicon
+     Valley VCs Place Their Bets (<a href="http://techcrunch.com/2013/04/11/bitcoin/">TechCrunch</a>)
+</li>
+<li>Several hours: Second Market's Bitcoin Education Center (<a href="https://www.secondmarket.com/education/learn/bitcoin-education-center">Second Market</a>)
+</li>
+<li>Several days: Jon Matonis' roundup of Bitcoin educational resources, including
+     links to the <a href="https://www.udemy.com/bitcoin-or-how-i-learned-to-stop-worrying-and-love-crypto/">Udemy</a> and <a href="https://www.khanacademy.org/science/core-finance/money-and-banking/bitcoin/v/bitcoin-what-is-it">Khan Academy</a> courses. (<a href="http://www.forbes.com/sites/jonmatonis/2013/05/13/6-new-bitcoin-educational-resources/">Matonis at Forbes</a>)
+</li>
+</ol>
+
+
+<p>
+For the purposes of the class the main advantage of Bitcoin is that you can
+get set up with merchant accounts with little or no hassle relative to
+traditional payment gateways.
+</p>
+<p>
+Coinbase is a Bitcoin payment provider with no international restrictions on
+merchant accounts at the present time, which is the primary reason we're
+using them in such an international class. Currently the <a href="http://blogs.wsj.com/venturecapital/2013/05/07/coinbase-nabs-5m-in-biggest-funding-for-bitcoin-startup/">best funded team</a> in
+the space, one can think of them as "Paypal for Bitcoin", or "Stripe for
+Bitcoin". They provide both a simple way to buy Bitcoin and a fairly
+sophisticated API for running merchant accounts.
+</p>
+<p>
+To get started with Coinbase sign up <a href="https://coinbase.com/signup">here</a>. You'll then want to set up a
+payment button as described <a href="https://coinbase.com/docs/merchant_tools/payment_buttons">here</a>. We'll use a few of the custom fields,
+including <code>data-button-style</code> and <code>data-button-text</code> (see <a href="https://coinbase.com/docs/merchant_tools/payment_buttons">Customizing the Embed HTML</a>). Below we see the full flow of setting up a Coinbase account,
+getting a button, pasting it in, deploying it to production, placing a
+payment, seeing that payment hit your Coinbase account, and finally seeing
+it reflected in the global Bitcoin blockchain (see <a href="https://blockchain.info/tx/67cecf77e352a567582d76416f5770ce0ca89a07d138c47fb79aa61bf7774036">here</a> and <a href="https://blockchain.info/address/18yx5qT2gLXrD3HitDTs9pqFph5qjv5BwZ">here</a>). The PDF
+version of this figure is <a href="https://d396qusza40orc.cloudfront.net/startup/images/coinbase-figure.pdf">here</a>.
+</p>
+
+
+<div style="text-align:center;">
+<img width="80%" src="https://d396qusza40orc.cloudfront.net/startup/images/coinbase-figure.png">
+</div>
+<br/>
+<br/>
+
+<p>
+In order to test out Coinbase preorders through your site, you'll need some
+BTC. In the US it's easy and fast to purchase from Coinbase itself. If you
+are a non-US resident, first try <a href="http://howtobuybitcoins.info">howtobuybitcoins.info</a>. If all else fails,
+sign up at <a href="https://startupstanford.wufoo.com/forms/startup-engineering-bitcoin-test-request">this form</a> and we will send you a small amount of BTC (less than
+$1 USD) to test. You provide a Bitcoin address from your Coinbase account by
+going <a href="https://coinbase.com/addresses">here</a>, clicking "Create New Address", and then pasting it into the
+appropriate form field. <i>Please only use this if you are outside the US and truly can't get BTC in your country via howtobuybitcoins.info</i>. We reserve
+the right to cut this off if it becomes abusive. Note that you can use even
+$1 USD (~.01 BTC) for quite a lot of testing because transaction fees are
+now either 0 BTC (for small transactions with large outputs and high
+priorities) or .0001 BTC as of version 0.8.2 of the client (see <a href="http://www.btcpedia.com/bitcoin-qt-0-8-2-lower-fee/">here</a> and
+<a href="https://en.bitcoin.it/wiki/Transaction_fees">here</a> for details).
+</p>
+<p>
+<i>Submit</i>: Upload a file with one line containing your
+data-code="e853ae7e5a4d309e6e5512e4dbb68720" Coinbase identifier code. This is a unique string that identifies your Coinbase button which
+you'll have once you complete this part.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-5" class="outline-3">
+<h3 id="sec-1-5">Part 5: Set up USD payments with Stripe (optional, requires SSL certificate and US/Canadian Bank Account)</h3>
+<div class="outline-text-3" id="text-1-5">
+
+<p>If you do not want to use Bitcoin/Coinbase for payments, and are located in
+the US or Canada, you can try using Stripe <a href="https://manage.stripe.com/register">here</a>. The main issue here is that
+to deploy Stripe in production, you will need an SSL certificate (see <a href="https://stripe.com/help/ssl">here</a>),
+which will run you $20-100 or so if you use DNSimple. You can work around
+this to an extent by using the HTTPS URLs provided by Heroku
+(e.g. <a href="https://yourapp.herokuapp.com">https://yourapp.herokuapp.com</a>). If you do want to use Stripe, read the
+very last section of <a href="https://d396qusza40orc.cloudfront.net/startup%2Flecture_slides%2Flecture7-deployment-dns-custom-domains.pdf">Lecture 7</a> ("Setting up HTTPS and Google Apps"). Then
+sign up for a Stripe account. You'll need a US or Canadian bank account and
+will need to google around to find your bank's routing number (<a href="https://www.wellsfargo.com/help/routing_number/">example</a>). You
+can then test your Stripe set up using the test credit cards <a href="https://stripe.com/docs/testing">here</a>, and then
+a real credit card. We do recommend getting an SSL certificate if you plan
+to do something serious with your domain.
+</p></div>
+</div>
+</div>
+</div>
+
+<div id="postamble">
+
+</div>
+</body>
+</html>
+</p>
+
+            </div>
+        </div>
+    </div>
+        
+    
+    <script src="https://dt5zaw6a98blc.cloudfront.net/site-static/dae672ad78b1bf412cb5a9709a2ee4a143d9575b/spark/spark.js"></script>
+
+<script type="text/javascript">
+    // SET UP THE MULTITRACKER
+        window.logger = window.Log({level:"error"});
+        var parts = location.host.split(".");
+    while(parts.length > 2) { parts.shift(); }
+
+    window.multitracker = window.MultiTracker({logger:window.logger});
+    window.multitracker.register('204', window._204 = window._204 || []);
+    window.multitracker.register('ga', window._gaq = window._gaq || [], 'google');
+
+    // SET UP GA and 204
+    window._gaq.push(['_setAccount', 'UA-28377374-1']);
+    window._gaq.push(['_setDomainName', 'coursera.org']);
+    window._gaq.push(['_setAllowLinker', true]);  
+    window._gaq.push(['_trackPageview']);
+    
+    window._204.push({key:"pageview", val:{}});
+    window._204.push(["client", "spark"]);
+    window._204.push(["user", 1571794]);
+    window._204.push(["domain", "." + parts.join(".")]);
+
+    // override our multitracker queues with the ga queue when it is ready
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    
+      ga.onload = ga.onreadystatechange = function() {
+          ga.onreadystatechange = ga.onload = null;
+          window.multitracker.get('ga').queue = window._gaq;
+      };
+    })();
+
+    // override our multitracker queues with the 204 queue when it is ready
+    (function() {
+      var a = document.createElement('script'); a.type = 'text/javascript'; a.async = true;
+      a.src = 'https://eventing.coursera.org/204.min.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(a, s);
+      a.onload = a.onreadystatechange = function() {
+          a.onreadystatechange = a.onload = null;
+          window.multitracker.get('204').queue = window._204;
+      };
+    })();
+</script>
+
+<script>
+  // Set up shared AB testing object
+  (function() {
+    window.ab = {};
+
+    // we want to share the 204 session cookie with the AB session cookie...
+    var sessionId = AB.makeSession("__204u", {expires:356, domain:"." + location.host});
+        var debug = true;
+    
+    window.ab.user = window.AB(1571794, "user", {debug:debug, tracker:window.multitracker, logger:window.logger});
+    window.ab.session = window.AB(sessionId, "session", {debug:debug, tracker:window.multitracker, logger:window.logger});
+
+    if(window.CourseraABExperiments.user) {
+        window.ab.user.addExperiments(window.CourseraABExperiments.user);
+        window.ab.user.runExperimentsOn("body");
+    }
+
+    if(window.CourseraABExperiments.session) {
+        window.ab.session.addExperiments(window.CourseraABExperiments.session);
+        window.ab.session.runExperimentsOn("body");
+    }
+  })();
+</script>
+
+
+    <script>
+      // Set up help widget
+      (function() {
+        $("[data-helpwidget]").each(function() {
+            window.HelpWidget(this, {tracker: window.multitracker});
+        });
+       })();
+ 
+        $("[data-readme]").each(function() {
+            window.ReadMe(this);
+        });
+    </script>
+
+    <script src="https://dt5zaw6a98blc.cloudfront.net/site-static/dae672ad78b1bf412cb5a9709a2ee4a143d9575b/spark/core/js/modal_focus.js" type="text/javascript"></script>
+    <script src="https://dt5zaw6a98blc.cloudfront.net/site-static/dae672ad78b1bf412cb5a9709a2ee4a143d9575b/spark/core/js/get_query_parameters.js" type="text/javascript"></script>
+    <script src="https://dt5zaw6a98blc.cloudfront.net/site-static/dae672ad78b1bf412cb5a9709a2ee4a143d9575b/spark/core/js/signature_track.js" type="text/javascript"></script>
+    <script src="https://dt5zaw6a98blc.cloudfront.net/site-static/dae672ad78b1bf412cb5a9709a2ee4a143d9575b/spark/app/generic/js/item_list.js" type="text/javascript"></script>
+    <script src="https://dt5zaw6a98blc.cloudfront.net/site-static/dae672ad78b1bf412cb5a9709a2ee4a143d9575b/spark/app/generic/js/navbar.js" type="text/javascript"></script>
+
+    
+    <script>
+     // Set up help widget
+      (function() {
+        $("[data-helpwidget]").each(function() {
+            window.HelpWidget(this, {tracker: window.multitracker});
+        });
+       })();
+    </script>
+
+    
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  config: ["MMLorHTML.js"],
+  
+  styleSheets: [],
+  styles: {},
+
+  jax: ["input/TeX"],
+  
+  extensions: ["tex2jax.js"],
+
+  preJax: null,
+  postJax: null,
+
+  preRemoveClass: "MathJax_Preview",
+
+  showProcessingMessages: true,
+
+  messageStyle: "none",
+  
+  displayAlign: "center",
+  displayIndent: "0em",
+  
+  delayStartupUntil: "none",
+
+  skipStartupTypeset: false,
+  
+  elements: [],
+  
+  tex2jax: {
+	    inlineMath: [
+	                 ['$$','$$'],      // uncomment this for standard TeX math delimiters
+	                 ['\\(','\\)']
+	                 ],
+
+	                 displayMath: [
+	                 ['\\[','\\]']
+	                 ],
+
+    skipTags: ["script","noscript","style","textarea","pre","code"],
+    ignoreClass: "tex2jax_ignore",
+    processClass: "tex2jax_process",
+    processEscapes: false,
+    processEnvironments: true,
+    preview: "TeX"
+    
+  },
+  
+  mml2jax: {
+    preview: "alttext"
+    
+  },
+  
+  jsMath2jax: {
+    preview: "TeX"
+    
+  },
+
+  TeX: {
+    TagSide: "right",
+    TagIndent: ".8em",
+    MultLineWidth: "85%",
+    Macros: {},
+
+    extensions: ["AMSmath.js", "AMSsymbols.js"]
+    
+  },
+
+  //============================================================================
+  //
+  //  These parameters control the MathML inupt jax.
+  //
+  MathML: {
+    //
+    //  This specifies whether to use TeX spacing or MathML spacing when the
+    //  HTML-CSS output jax is used.
+    //
+    useMathMLspacing: false
+  },
+  
+  //============================================================================
+  //
+  //  These parameters control the HTML-CSS output jax.
+  //
+  "HTML-CSS": {
+    
+    scale: 100,
+    
+    availableFonts: ["STIX","TeX"],
+    
+    preferredFont: "TeX",
+    
+    webFont: "TeX",
+    
+    imageFont: "TeX",
+    
+    undefinedFamily: "STIXGeneral,'Arial Unicode MS',serif",
+      
+    showMathMenu: true,
+
+    styles: {},
+    
+    tooltip: {
+      delayPost: 600,          // milliseconds delay before tooltip is posted after mouseover
+      delayClear: 600,         // milliseconds delay before tooltip is cleared after mouseout
+      offsetX: 10, offsetY: 5  // pixels to offset tooltip from mouse position
+    }
+  },
+  
+  //============================================================================
+  //
+  //  These parameters control the NativeMML output jax.
+  //
+  NativeMML: {
+
+    scale: 100,
+
+    showMathMenu: true,
+    showMathMenuMSIE: true,
+
+    styles: {}
+  },
+  
+  MathMenu: {
+    delay: 400,
+    
+    helpURL: "http://www.mathjax.org/help/user/",
+
+    showRenderer: true,
+    showFontMenu: false,
+    showContext:  false,
+
+    windowSettings: {
+      status: "no", toolbar: "no", locationbar: "no", menubar: "no",
+      directories: "no", personalbar: "no", resizable: "yes", scrollbars: "yes",
+      width: 100, height: 50
+    },
+    
+    styles: {}
+    
+  },
+
+  MMLorHTML: {
+    prefer: {
+      MSIE:    "MML",
+      Firefox: "MML",
+      Opera:   "HTML",
+      other:   "HTML"
+    }
+  }
+});
+</script>
+<script type="text/javascript">
+(function () {
+
+  function loadMathJax() {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://duqnjvq4jwr55.cloudfront.net/2.1/MathJax.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  }
+
+  window.loadOrRefreshMathJax = function(domId) {
+    if (window.MathJax) {
+      if (domId) {
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub, domId]);
+      } else {
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+      }
+    } else {
+      loadMathJax();
+    }
+  }
+})();
+</script>
+    <script type="text/javascript">
+        var site_base_url = "https:\/\/www.coursera.org\/";
+        var site_static_asset_url = "https:\/\/dt5zaw6a98blc.cloudfront.net\/site-static\/";
+        var spark_class_short_name = "startup";
+        var spark_class_id = 970374;
+        var spark_class_url = "\/startup-001";
+        var spark_signature_url = "https:\/\/class.coursera.org\/startup-001\/signature\/";
+        
+        var course_strings_name = "Startup Engineering";
+        var student_full_name = "Behrang Allahyar";
+    </script>
+
+    
+<script type="text/javascript">$(function() { loadOrRefreshMathJax();})</script>
+
+</body>
+
 </html>
